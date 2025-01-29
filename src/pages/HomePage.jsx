@@ -22,7 +22,7 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4 text-gray-200">
-              Plan Your Exams Efficiently
+              Plan Your Exams Efficiently With AI
             </h1>
             <p className="text-lg md:text-2xl mb-8 max-w-[900px] mx-auto">
               ExamPlanner helps you organize your exam schedules, allocate
