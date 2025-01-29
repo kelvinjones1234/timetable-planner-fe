@@ -14,7 +14,7 @@ import {
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-const API_URL = "http://127.0.0.1:8000/api/exam-time-table/";
+const API_URL = "https://explanner.pythonanywhere.com/exam-time-table/";
 
 const TimeTablePage = () => {
   const [timeTableDetails, setTimeTableDetails] = useState([]);

@@ -11,7 +11,7 @@ const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const api = axios.create({
-    baseURL: "http://127.0.0.1:8000/api",
+    baseURL: "https://explanner.pythonanywhere.com/api",
     timeout: 10000,
     headers: {
       "Content-Type": "application/json",

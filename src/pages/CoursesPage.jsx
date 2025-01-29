@@ -24,7 +24,7 @@ const CoursesPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/departments/", {
+      .get("https://explanner.pythonanywhere.com/api/departments/", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -39,7 +39,7 @@ const CoursesPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/courses/", {
+      .get("https://explanner.pythonanywhere.com/api/courses/", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -63,7 +63,7 @@ const CoursesPage = () => {
     e.preventDefault();
 
     axios
-      .post("http://127.0.0.1:8000/api/courses/", newCourse, {
+      .post("https://explanner.pythonanywhere.com/api/courses/", newCourse, {
         headers: {
           "Content-Type": "application/json",
         },

@@ -18,7 +18,7 @@ const VenuesPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/venues/", {
+      .get("https://explanner.pythonanywhere.com/api/venues/", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -43,7 +43,7 @@ const VenuesPage = () => {
     e.preventDefault();
 
     axios
-      .post("http://127.0.0.1:8000/api/venues/", newVenue, {
+      .post("https://explanner.pythonanywhere.com/api/venues/", newVenue, {
         headers: {
           "Content-Type": "application/json",
         },
