@@ -69,7 +69,6 @@ const PlanPage = () => {
   console.log("Selected Course Set", selectedCourseSet);
   console.log("Selected Venue Set", selectedVenueSet);
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
@@ -91,7 +90,7 @@ const PlanPage = () => {
           num_students: course.num_students,
           units: course.units,
           department_name: course.department_name,
-          level: course.level
+          level: course.level,
         }))
       ),
       startDate: startDate.toISOString(),
@@ -296,9 +295,9 @@ const PlanPage = () => {
               </div>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 pointer-events-none">
               <PrimaryButton
-                label="Create Time Table"
+                label="the submit button has been disabled to prevent API abuse"
                 style="w-full"
                 loading={loading}
                 setLoading={setLoading}
